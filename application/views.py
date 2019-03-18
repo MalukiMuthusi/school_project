@@ -5,4 +5,4 @@ from application.models import Parent, School, Student
 
 # Create your views here.
 def index(request):
-    return render(request, 'base_generic')
+    return render(request, 'base_generic.html')
