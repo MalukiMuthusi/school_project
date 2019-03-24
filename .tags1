@@ -1,0 +1,158 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+html	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^<html lang="en">$/;"	function	line:3
+head	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^  <head>$/;"	function	line:8
+meta	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <meta charset="UTF-8">$/;"	function	line:9
+meta	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <meta name="viewport" content="width=device-width, initial-scale=1.0">$/;"	function	line:10
+meta	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <meta http-equiv="X-UA-Compatible" content="ie=edge">$/;"	function	line:11
+title	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <title>Online School Transfer System<\/title>$/;"	function	line:12
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="shortcut icon" href="{% static 'images\/favicon.ico' %}">$/;"	function	line:13
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/bootstrap.min.css' %}">$/;"	function	line:15
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/all.min.css' %}">$/;"	function	line:16
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/themify-icons.css' %}">$/;"	function	line:17
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/style.css' %}">$/;"	function	line:18
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/owl.theme.default.min.css' %}">$/;"	function	line:19
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/owl.carousel.min.css' %}">$/;"	function	line:20
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/magnific-popup.css' %}">$/;"	function	line:21
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/magnific-popup.css' %}">$/;"	function	line:22
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/font-awesome.min.css' %}">$/;"	function	line:23
+link	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <link rel="stylesheet" href="{% static 'css\/style_main.css' %}">$/;"	function	line:25
+body	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^  <body>$/;"	function	line:29
+header	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <header class="header_area">$/;"	function	line:33
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="main_menu">$/;"	function	line:34
+nav	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <nav class="navbar navbar-expand-lg navbar-light">$/;"	function	line:35
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="container box_1620">$/;"	function	line:36
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39" src="{% static 'images\/book.png' %}" alt=""><\/a>$/;"	function	line:38
+button	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">$/;"	function	line:39
+span	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <span class="icon-bar"><\/span>$/;"	function	line:40
+span	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <span class="icon-bar"><\/span>$/;"	function	line:41
+span	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <span class="icon-bar"><\/span>$/;"	function	line:42
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">$/;"	function	line:46
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <ul class="nav navbar-nav menu_nav justify-content-end">$/;"	function	line:47
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <li class="nav-item active"><a class="nav-link" href="index.html">Home<\/a><\/li>$/;"	function	line:48
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <li class="nav-item"><a class="nav-link" href="about.html">About<\/a><\/li>$/;"	function	line:49
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <li class="nav-item"><a class="nav-link" href="speaker.html">Schools<\/a>$/;"	function	line:50
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <li class="nav-item submenu dropdown">$/;"	function	line:51
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<\/a>$/;"	function	line:52
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <li class="nav-item"><a class="nav-link" href="index.html">Contacts<\/a><\/li>$/;"	function	line:53
+section	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <section class="hero-banner">$/;"	function	line:64
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="container text-center">$/;"	function	line:65
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <h1>Online School Appliaction And Admission System <img src="{% static 'images\/head.png' %}" alt=""><\/h1>$/;"	function	line:67
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <p>Helping you to transfer to your dream school<\/p>$/;"	function	line:68
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <a class="button button-header mt-4" href="#">Join US<\/a>$/;"	function	line:69
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <p class="mt-2"><img src="{% static 'images\/pen_black.png' %}" alt=""><\/p>$/;"	function	line:70
+section	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <section class="section-padding--small bg-gray">$/;"	function	line:77
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="container">$/;"	function	line:78
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="row">$/;"	function	line:79
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-6 align-self-center mb-5 mb-lg-0">$/;"	function	line:80
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="innovative-wrapper">$/;"	function	line:81
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h3 class="primary-text">Transfer to your dream school with style. <br class="d-none d-xl-block">Students<\/h3>$/;"	function	line:82
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p class="h4 primary-text2 mb-3"><\/p>$/;"	function	line:83
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>We are passionate about making you to easily transition to another school. Whether in primary school or secondary school. Also from primary school to secondary. All that you need is visit the school of your choice online and apply.$/;"	function	line:84
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-6 pl-xl-5">$/;"	function	line:88
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="innovative-wrapper">$/;"	function	line:89
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h3 class="primary-text">Manage Admissions. <br class="d-none d-xl-block">Primary And Secondary Schools<\/h3>$/;"	function	line:90
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p class="h4 primary-text2 mb-3"><\/p>$/;"	function	line:91
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>Using our system you can easily manage the whole process of admitting students. From publishing the is vancancy in your school web page to inviting qualified candidates for interview. The checking their background data from their$/;"	function	line:92
+section	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <section class="section-padding--small bg-gray text-center section-margin">$/;"	function	line:103
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="container">$/;"	function	line:104
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="row">$/;"	function	line:105
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-12 align-self-center mb-5 mb-lg-0">$/;"	function	line:106
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="innovative-wrapper">$/;"	function	line:107
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h3 class="primary-text">Why Join Us. <br class="d-none d-xl-block"><\/h3>$/;"	function	line:108
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p class="h4 primary-text2 mb-3"><\/p>$/;"	function	line:109
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>We guarantee to offer high quality service for both schools and students or parents.<\/p>$/;"	function	line:110
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>When a school joins our services, We provide an online platform to them to manage the process of admitting students. The school gets a blogging section where they can post for new vancancies or any school news of their interest. The$/;"	function	line:111
+br	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <br>$/;"	function	line:113
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>A student or any interesetd party can visit our website and view list of available schools in our system. They can then visit the school website and proceed from there. They can make inquiries to the school if they want, for$/;"	function	line:114
+section	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <section class="speaker-bg section-padding">$/;"	function	line:125
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="container">$/;"	function	line:126
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="section-intro section-intro-white text-center pb-98px">$/;"	function	line:127
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <h2 class="primary-text">Our Team<\/h2>$/;"	function	line:128
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="row">$/;"	function	line:131
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:132
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:133
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:134
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:135
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Maluki Muthusi<\/h4>$/;"	function	line:136
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>Project Manager<\/p>$/;"	function	line:137
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:139
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:140
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:141
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:142
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:143
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:144
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:149
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:150
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:151
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:152
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Catherine Wambai<\/h4>$/;"	function	line:153
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>Retired Pricipal<br>Makadara Secondary<\/p>$/;"	function	line:154
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:156
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:157
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:158
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:159
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:160
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:161
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:166
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:167
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:168
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:169
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Ali Mazrui<\/h4>$/;"	function	line:170
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>High School Teacher<br>Umoja Primary<\/p>$/;"	function	line:171
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:173
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:174
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:175
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:176
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:177
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:178
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="w-100 mb-50px d-none d-lg-block"><\/div>$/;"	function	line:184
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:186
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:187
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:188
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:189
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Samson Wahina<\/h4>$/;"	function	line:190
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>Head Teacher<br>Light Academy<\/p>$/;"	function	line:191
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:193
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:194
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:195
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:196
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:197
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:198
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:203
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:204
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:205
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:206
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Sharon Wambui<\/h4>$/;"	function	line:207
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>Curriculum Developer<br>Ministry of Education<\/p>$/;"	function	line:208
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:210
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:211
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:212
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:213
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:214
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:215
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">$/;"	function	line:220
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="card-speaker">$/;"	function	line:221
+img	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <img class="card-img rounded-0" src="{% static 'images\/speaker-1.png' %}" alt="">$/;"	function	line:222
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-footer">$/;"	function	line:223
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <h4>Vincent Maseki<\/h4>$/;"	function	line:224
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <p>Senior Software Developer<br>New Tech Solved<\/p>$/;"	function	line:225
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="speaker-overlay">$/;"	function	line:227
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <ul class="speaker-social">$/;"	function	line:228
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-facebook"><\/i><\/a><\/li>$/;"	function	line:229
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:230
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:231
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:232
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery-3.2.1.min.js' %}"><\/script>$/;"	function	line:244
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/bootstrap.bundle.min.js' %}"><\/script>$/;"	function	line:245
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/owl.carousel.min.js' %}"><\/script>$/;"	function	line:246
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:247
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.ajaxchimp.min.js' %}"><\/script>$/;"	function	line:248
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/mail-script.js' %}"><\/script>$/;"	function	line:249
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/countdown.js' %}"><\/script>$/;"	function	line:250
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:251
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/main.js' %}"><\/script>$/;"	function	line:252
