@@ -826,7 +826,7 @@ h4, .h4 {
 .hero-banner {
   position: relative;
   padding: 70px 0;
-  background: url("../img/banner/hero-banner.png") left center no-repeat;
+  background: url('../images/banner/hero-banner.png') left center no-repeat;
   background-size: cover
 }
 
