@@ -147,12 +147,54 @@ li	/home/superior/Documents/project_learn/csc227/application/templates/base_gene
 li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-twitter-alt"><\/i><\/a><\/li>$/;"	function	line:230
 li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-instagram"><\/i><\/a><\/li>$/;"	function	line:231
 li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <li><a href="#"><i class="ti-skype"><\/i><\/a><\/li>$/;"	function	line:232
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery-3.2.1.min.js' %}"><\/script>$/;"	function	line:244
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/bootstrap.bundle.min.js' %}"><\/script>$/;"	function	line:245
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/owl.carousel.min.js' %}"><\/script>$/;"	function	line:246
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:247
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.ajaxchimp.min.js' %}"><\/script>$/;"	function	line:248
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/mail-script.js' %}"><\/script>$/;"	function	line:249
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/countdown.js' %}"><\/script>$/;"	function	line:250
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:251
-script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/main.js' %}"><\/script>$/;"	function	line:252
+footer	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <footer class="footer-area">$/;"	function	line:244
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="container">$/;"	function	line:245
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="row">$/;"	function	line:246
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4  col-md-6 col-sm-6">$/;"	function	line:247
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="single-footer-widget">$/;"	function	line:248
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h6>About US<\/h6>$/;"	function	line:249
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>$/;"	function	line:250
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4 col-md-6 col-sm-6">$/;"	function	line:255
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="single-footer-widget">$/;"	function	line:256
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h6>Navigation Links<\/h6>$/;"	function	line:257
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div class="row">$/;"	function	line:258
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <div class="col">$/;"	function	line:259
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <ul>$/;"	function	line:260
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Home<\/a><\/li>$/;"	function	line:261
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Feature<\/a><\/li>$/;"	function	line:262
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Services<\/a><\/li>$/;"	function	line:263
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Our Team<\/a><\/li>$/;"	function	line:264
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <div class="col">$/;"	function	line:267
+ul	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <ul>$/;"	function	line:268
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Schools<\/a><\/li>$/;"	function	line:269
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Parent\/Students<\/a><\/li>$/;"	function	line:270
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Blog<\/a><\/li>$/;"	function	line:271
+li	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <li><a href="#">Contact<\/a><\/li>$/;"	function	line:272
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="col-lg-4  col-md-6 col-sm-6">$/;"	function	line:278
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="single-footer-widget">$/;"	function	line:279
+h	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <h6>Newsletter<\/h6>$/;"	function	line:280
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <p>$/;"	function	line:281
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <div id="mc_embed_signup">$/;"	function	line:284
+form	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                <form target="_blank" action="https:\/\/spondonit.us12.list-manage.com\/subscribe\/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">$/;"	function	line:285
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <div class="input-group d-flex flex-row">$/;"	function	line:286
+input	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">$/;"	function	line:287
+button	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                    <button class="btn bb-btn"><span class="lnr lnr-location"><\/span><\/button>$/;"	function	line:288
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^                  <div class="mt-10 info"><\/div>$/;"	function	line:290
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^      <div class="footer-bottom">$/;"	function	line:297
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^        <div class="container">$/;"	function	line:298
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^          <div class="row align-items-center">$/;"	function	line:299
+p	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">$/;"	function	line:300
+div	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^            <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">$/;"	function	line:307
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <a href="#"><i class="fab fa-facebook-f"><\/i><\/a>$/;"	function	line:308
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <a href="#"><i class="fab fa-twitter"><\/i><\/a>$/;"	function	line:309
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <a href="#"><i class="fab fa-dribbble"><\/i><\/a>$/;"	function	line:310
+a	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^              <a href="#"><i class="fab fa-behance"><\/i><\/a>$/;"	function	line:311
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery-3.2.1.min.js' %}"><\/script>$/;"	function	line:322
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/bootstrap.bundle.min.js' %}"><\/script>$/;"	function	line:323
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/owl.carousel.min.js' %}"><\/script>$/;"	function	line:324
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:325
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.ajaxchimp.min.js' %}"><\/script>$/;"	function	line:326
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/mail-script.js' %}"><\/script>$/;"	function	line:327
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/countdown.js' %}"><\/script>$/;"	function	line:328
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/jquery.magnific-popup.min.js' %}"><\/script>$/;"	function	line:329
+script	/home/superior/Documents/project_learn/csc227/application/templates/base_generic.html	/^    <script src="{% static 'js\/main.js' %}"><\/script>$/;"	function	line:330
