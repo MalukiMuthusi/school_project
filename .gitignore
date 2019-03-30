@@ -1,10 +1,11 @@
-
+# files to be ignore by git
 application/__pycache__
 csc227/__pycache__
 application/migrations/__pycache__
 /home/superior/Documents/project_learn/csc227/coding-envronment/
 /home/superior/Documents/project_learn/csc227/coding-envronment
-coding-envronment
+.venv*
 junior-dev*
 senior-dev*
-*venv
+.env
+*require*
