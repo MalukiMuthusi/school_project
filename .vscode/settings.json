@@ -3,4 +3,6 @@
     "python.linting.enabled": true,
     "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
     "python.pythonPath": ".venv/project227/bin/python3",
+    "python.linting.pep8Enabled": false,
+    "python.linting.flake8Enabled": true,
 }
