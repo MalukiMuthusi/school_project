@@ -1,7 +1,10 @@
 import uuid
 from random import randint
+import datetime
 
 from django.db import models
+from django.utils.translation import gettext_lazy as _
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 
@@ -29,7 +32,19 @@ class Student(models.Model):
     class Meta:
         ordering = ['admission_number']
         db_table = 'students'
+    
+    def clean(self):
+        #if  in primary school then  classes should 1-8 
+        if self.school.school_category == 'PRI_SCH':
+            self.current_class == 1 or self.current_class == 2 or self.current_class ==3 or self.current_class  ==4 or self.current_class == 5 or self.current_class == 6 or self.current_class ==7 or self.current_class ==8
+        else :
+            raise ValidationError(_('Class 1-8'))
 
+        if self.Date_of_Birth >= datetime.date.today():
+            raise ValidationError(_('Invalid Date of Birth. Date too small'))
+
+        if self.Date_of_Birth <= datetime.date(1997,1,1):
+            raise ValidationError(_('Invalid date of birth. Date too large.'))
 
 class Parent(models.Model):
     first_name = models.CharField(

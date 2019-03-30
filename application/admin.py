@@ -8,7 +8,7 @@ from .models import Parent, School, Student
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
     fields = (('first_name', 'last_name'), 'admission_number',
-              'Date_of_Birth', 'current_class', 'school', 'home_town')
+              'Date_of_Birth',  'school', 'current_class','home_town')
     search_fields = ['admission_number']
     list_filter = ('school', 'current_class', 'Date_of_Birth', 'home_town')
 
