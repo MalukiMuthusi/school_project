@@ -1,0 +1,54 @@
+{% extends 'base_school.html' %} {% load static %}
+
+
+<!--================Hero Banner Area Start =================-->
+{% block hero-banner %}
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+        <h2>{{ name }}</h2>
+        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <h2><a href="#">List of Schools</a></h2>
+                </li>
+                <!--li class="breadcrumb-item active" aria-current="page">Blog</li-->
+            </ol>
+        </nav>
+    </div>
+</section>
+{% endblock hero-banner %}
+<!--================Hero Banner Area End =================-->
+
+
+<!-- =============== List of all schools start ===============-->
+{% block section1 %}
+<section class="section-padding--small bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+                <div class="innovative-wrapper">
+                    <h3 class="primary-text">Primary Schools
+                    </h3>
+                    <p class="h4 primary-text2 mb-3"></p>
+                    {% for primo in primo %}
+                    <p><a href="{% url 'school' primo.pk %}"> {{ primo }} </a></p> <br>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-6 pl-xl-5">
+                <div class="innovative-wrapper">
+                    <h3 class="primary-text">Secondary schools.
+                    </h3>
+                    <p class="h4 primary-text2 mb-3"></p>
+                    {% for sec in sec %}
+                    <p><a href="{% url 'school' sec.pk %}"> {{ sec }} </a></p> <br>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock section1 %}
+<!-- =============== List of all schools start ===============-->
+
+{% block section2 %} {% endblock section2 %} {% block section3 %} {% endblock section3 %} {% include 'paginator.html' with page_obj=all_entries %}

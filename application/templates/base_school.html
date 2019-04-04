@@ -1,0 +1,52 @@
+{% extends 'base_generic.html' %}
+{% load static %}
+
+
+<!--================ Header Menu Area start =================-->
+    {% block header %}
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand Logo -->
+                    <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39" src="{% static 'images/book.png' %}" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- with button for mobile view -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav justify-content-end">
+                            <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'all_schools' %}">Schools</a>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us</a>
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Contacts</a></li>
+                                </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    {% endblock header %}
+    <!--================Header Menu Area =================-->
+
+
+<!--================Hero Banner Area Start =================-->
+{% block hero-banner %}
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+        <h2>{{ name }}</h2>
+        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">{{ name }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+{% endblock hero-banner %}
+<!--================Hero Banner Area End =================-->
