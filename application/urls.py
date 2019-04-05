@@ -19,8 +19,19 @@ urlpatterns += [
     path('all_schools', views.all_schools, name='all_schools')
 ]
 
+""" about us """
+urlpatterns += [
+    path('about', views.about, name='about')
+]
 
-""" List all schools """
+
+""" about schools """
 urlpatterns += [
     path('school/<int:pk>/about', views.about_sch, name='about_sch')
+]
+
+
+""" register school """
+urlpatterns += [
+    path('school_reg', views.school_reg, name='school_reg')
 ]

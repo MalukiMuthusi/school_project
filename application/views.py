@@ -1,14 +1,25 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from django.shortcuts import redirect
+
+from application.models import School
+# from django.core.paginator import Paginator
+# from django.contrib.auth.decorators import login_required
+# from django.contrib.auth.forms import UserCreationForm
+# from .forms import SnippetForm, ContactForm, LoginForm
+# import datetime
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.views import generic
-from django.views.generic import TemplateView
+from .forms import SchoolRegisterForm
+from django.contrib import messages
 
-from application.models import Parent, School, Student
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 def index(request):
     return render(request, "index.html")
+
+
+def about(request):
+    return render(request, "about.html")
 
 
 def school(request, pk):
@@ -40,8 +51,8 @@ def all_schools(request):
         "primo": pri_sch,
         "sec": sec_sch
         }
-    page = request.GET.get('page', 1)
-    paginator = Paginator(all_entries, 5)
+    # page = request.GET.get('page', 1)
+    # paginator = Paginator(all_entries, 5)
     return render(request, "all_schools.html", context=context)
 
 
@@ -62,3 +73,35 @@ def about_sch(request, pk):
         "results": results
     }
     return render(request, "about_school.html", context=context)
+
+
+""" create a sign up view for school """
+
+
+def signup(request):
+    return render(request, "school_reg.html")
+
+
+def register(request):
+    if request.method == 'POST':
+        form = SchoolRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Account created for {username}!')
+            return redirect('index')
+    else:
+        form = SchoolRegisterForm()
+    return render(request, 'school_reg.html', {'form': form})
+
+
+def school_reg(request):
+    return render(request, "school_reg.html")
+
+
+""" add a school """
+
+
+class SchoolCreate(CreateView):
+    model = School
+    fields = '__all__'
