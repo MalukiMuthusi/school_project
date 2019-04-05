@@ -13,10 +13,20 @@ def index(request):
 
 def school(request, pk):
     school_name = School.objects.get(pk=pk)
+
+    if school_name.school_category == "PRI_SCH":
+        results = "KCPE past results"
+    elif school_name.school_category == "SEC_SCH":
+        results = "KCSE past results"
+    else:
+        results = "Past Results unavailable"
+
     context = {
         "name": school_name,
         "year": School.year_established,
         "sch_level": School.school_category,
+        "pk": pk,
+        "results": results
     }
     return render(request, "school.html", context=context)
 
@@ -34,3 +44,21 @@ def all_schools(request):
     paginator = Paginator(all_entries, 5)
     return render(request, "all_schools.html", context=context)
 
+
+def about_sch(request, pk):
+    school_name = School.objects.get(pk=pk)
+    sch_level = school_name.school_category
+    if school_name.school_category == "PRI_SCH":
+        results = "KCPE past results"
+    elif school_name.school_category == "SEC_SCH":
+        results = "KCSE past results"
+    else:
+        results = "Past Results unavailable"
+    context = {
+        "name": school_name,
+        "year": School.year_established,
+        "sch_level": sch_level,
+        "pk": pk,
+        "results": results
+    }
+    return render(request, "about_school.html", context=context)

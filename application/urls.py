@@ -18,3 +18,9 @@ urlpatterns += [
 urlpatterns += [
     path('all_schools', views.all_schools, name='all_schools')
 ]
+
+
+""" List all schools """
+urlpatterns += [
+    path('school/<int:pk>/about', views.about_sch, name='about_sch')
+]

@@ -1,4 +1,5 @@
-{% extends 'base_school.html' %} {% load static %}
+{% extends 'base_generic.html' %}
+{% load static %}
 
 
 <!--================ Header Menu Area start =================-->
@@ -18,7 +19,7 @@
                 <!-- with button for mobile view -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav justify-content-end">
-                        <li class="nav-item active"><a class="nav-link" href="{% url 'school' pk %}">Home</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{% url 'school' pk %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Departments</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">
                         {% if sch_level == 'PRI_SCH' %}
@@ -28,7 +29,7 @@
                         {% endif %}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'all_schools' %}">Staff</a>
                         <li class="nav-item "><a class="nav-link" href="#">Apply for admission</a>
-                            <li class="nav-item submenu dropdown">
+                            <li class="nav-item active submenu dropdown">
                                 <a href="{% url 'about_sch' pk %}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us</a>
                                 <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
                             </li>
@@ -39,3 +40,15 @@
 </header>
 {% endblock header %}
 <!--================Header Menu Area =================-->
+<!--================Hero Banner Area Start =================-->
+{% block hero-banner %}
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+        <h2>About US</h2>
+    </div>
+</section>
+{% endblock hero-banner %}
+<!--================Hero Banner Area End =================-->
+
+{% block section2 %}
+{% endblock section2 %}
