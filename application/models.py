@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -56,15 +57,17 @@ class Student(models.Model):
     def clean(self):
         # if  in primary school then  classes should 1-8
         if self.school.school_category == "PRI_SCH":
-            self.current_class == 1 or self.current_class == 2 or self.current_class == 3 or self.current_class == 4 or self.current_class == 5 or self.current_class == 6 or self.current_class == 7 or self.current_class == 8
-        else:
-            raise ValidationError(_("Class 1-8"))
+            if self.current_class <= 0 or self.current_class > 8:
+                raise ValidationError(_("Class 1-8"))
+        if self.school.school_category == "SEC_SCH":
+            if self.current_class <= 0 or self.current_class > 4:
+                raise ValidationError(_("Form 1-4"))
 
         if self.Date_of_Birth >= datetime.date.today():
             raise ValidationError(_("Invalid Date of Birth. Date too small"))
 
         if self.Date_of_Birth <= datetime.date(1997, 1, 1):
-            raise ValidationError(_("Invalid date of birth. Date too large."))
+            raise ValidationError(_("Invalid date of birth. Date too large"))
 
 
 class Parent(models.Model):
@@ -133,6 +136,7 @@ class School(models.Model):
         max_length=20,
         db_column="school_category",
     )
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("school", kwargs={"pk": self.pk})
@@ -143,3 +147,4 @@ class School(models.Model):
     class Meta:
         db_table = "schools"
         ordering = ["school_category", "number_of_students", "number_of_teachers"]
+
