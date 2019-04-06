@@ -2,41 +2,43 @@
 {% load static %}
 
 
-    <!--================ Header Menu Area start =================-->
-    {% block header %}
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container box_1620">
-                    <!-- Brand Logo -->
-                    <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39"
-                            src="{% static 'images/book.png' %}" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<!--================ Header Menu Area start =================-->
+{% block header %}
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container box_1620">
+                <!-- Brand Logo -->
+                <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39"
+                        src="{% static 'images/book.png' %}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                    <!-- with button for mobile view -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item active"><a class="nav-link" href="{% url 'school' pk %}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Teaching Staffs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'about_school' %}">About</a>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'school_reg' %}">Results</a>
-                            <li class="nav-item"><a class="nav-link" href="#">Apply for admission</a>
-                        </ul>
-                    </div>
+                <!-- with button for mobile view -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav justify-content-end">
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'school' pk %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Teaching Staffs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about_school' %}">About</a>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'school_reg' %}">Results</a>
+                        <li class="nav-item"><a class="nav-link" href="#">Apply for admission</a>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
-    {% endblock header %}
-    <!--================Header Menu Area =================-->
+            </div>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+<!--================Header Menu Area =================-->
 
+{% if messages %} {% for message in messages %}
+<p class="alert alert-info">{{ message }}</p>
 
 <!--================Hero Banner Area Start =================-->
 {% block hero-banner %}

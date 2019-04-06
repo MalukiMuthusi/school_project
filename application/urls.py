@@ -33,5 +33,5 @@ urlpatterns += [
 
 """ register school """
 urlpatterns += [
-    path('school_reg', views.school_reg, name='school_reg')
+    path('school_reg', views.register, name='school_reg')
 ]
