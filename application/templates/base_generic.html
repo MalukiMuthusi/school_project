@@ -69,18 +69,22 @@
     <!--================Header Menu Area =================-->
 
 
+    {% if messages %} {% for message in messages %}
+    <p class="alert alert-info">{{ message }}</p>
+    {% endfor %} {% endif %}
+
     <!--================Hero Banner Area Start =================-->
-    {% block hero-banner %} 
-    
-<section class="hero-banner">
-    <div class="container text-center">
-        <!--span class="hero-banner-icon"><i class="flaticon-sing"></i></span-->
-        <h1>Online School Appliaction And Admission System <img src="{% static 'images/head.png' %}" alt=""></h1>
-        <p>Helping you to transfer to your dream school</p>
-        <a class="button button-header mt-4" href="{% url 'school_reg' %}">Join US</a>
-        <p class="mt-2"><img src="{% static 'images/pen_black.png' %}" alt=""></p>
-    </div>
-</section>
+    {% block hero-banner %}
+
+    <section class="hero-banner">
+        <div class="container text-center">
+            <!--span class="hero-banner-icon"><i class="flaticon-sing"></i></span-->
+            <h1>Online School Appliaction And Admission System <img src="{% static 'images/head.png' %}" alt=""></h1>
+            <p>Helping you to transfer to your dream school</p>
+            <a class="button button-header mt-4" href="{% url 'school_reg' %}">Join US</a>
+            <p class="mt-2"><img src="{% static 'images/pen_black.png' %}" alt=""></p>
+        </div>
+    </section>
     {% endblock hero-banner %}
     <!--================Hero Banner Area End =================-->
 

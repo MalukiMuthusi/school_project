@@ -2,13 +2,16 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 from application.models import School
+
 # from django.core.paginator import Paginator
 # from django.contrib.auth.decorators import login_required
 # from django.contrib.auth.forms import UserCreationForm
 # from .forms import SnippetForm, ContactForm, LoginForm
 # import datetime
-from django.views.generic.edit import CreateView, DeleteView, UpdateView
-from django.views import generic
+from django.views.generic.edit import CreateView
+
+# DeleteView, UpdateView
+# from django.views import generic
 from .forms import SchoolRegisterForm
 from django.contrib import messages
 
@@ -37,7 +40,7 @@ def school(request, pk):
         "year": School.year_established,
         "sch_level": School.school_category,
         "pk": pk,
-        "results": results
+        "results": results,
     }
     return render(request, "school.html", context=context)
 
@@ -46,11 +49,7 @@ def all_schools(request):
     all_entries = School.objects.all()
     pri_sch = School.objects.filter(school_category="PRI_SCH")
     sec_sch = School.objects.filter(school_category="SEC_SCH")
-    context = {
-        "all_entries": all_entries,
-        "primo": pri_sch,
-        "sec": sec_sch
-        }
+    context = {"all_entries": all_entries, "primo": pri_sch, "sec": sec_sch}
     # page = request.GET.get('page', 1)
     # paginator = Paginator(all_entries, 5)
     return render(request, "all_schools.html", context=context)
@@ -70,7 +69,7 @@ def about_sch(request, pk):
         "year": School.year_established,
         "sch_level": sch_level,
         "pk": pk,
-        "results": results
+        "results": results,
     }
     return render(request, "about_school.html", context=context)
 
@@ -83,16 +82,16 @@ def signup(request):
 
 
 def register(request):
-    if request.method == 'POST':
+    if request.method == "POST":
         form = SchoolRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for {username}!')
-            return redirect('index')
+            username = form.cleaned_data.get("username")
+            messages.success(request, f"Account created for {username}!")
+            return redirect("index")
     else:
         form = SchoolRegisterForm()
-    return render(request, 'school_reg.html', {'form': form})
+    return render(request, "school_reg.html", {"form": form})
 
 
 def school_reg(request):
@@ -104,4 +103,4 @@ def school_reg(request):
 
 class SchoolCreate(CreateView):
     model = School
-    fields = '__all__'
+    fields = "__all__"
