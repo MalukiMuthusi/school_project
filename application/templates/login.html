@@ -1,0 +1,45 @@
+{% extends 'base_generic.html' %}
+{% load crispy_forms_tags %}
+
+<!--================Hero Banner Area Start =================-->
+{% block hero-banner %}
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+        <h2>Login To Be able to apply for vacancy</h2>
+        <a class="button button-header mt-4" href="{% url 'school_reg' %}">Join US</a>
+    </div>
+</section>
+{% endblock hero-banner %}
+<!--================Hero Banner Area End =================-->
+
+{% block section1 %}
+<div class="card" style="margin: 2% 25% 2% 25%">
+    <div class="card-title text-center font-weight-bold">
+        Login to Be able to apply for vancacy
+    </div>
+    <div class="card-body">
+
+        <form action="" method="POST" class="">
+            {% csrf_token %}
+            <!--{{ form.non_field_errors }}-->
+
+            {{ form|crispy }}
+
+            <div class="form-group row text-center">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Do you need an account? <a class="ml-2" href="{% url 'school_reg' %}">Sign Up</a>
+        </small>
+    </div>
+</div>
+{% endblock section1 %}
+
+{% block section2 %} {% endblock section2 %}
+{% block section3 %} {% endblock section3 %}
+{% include 'paginator.html' with page_obj=all_entries %}

@@ -20,27 +20,14 @@
 <!--================Hero Banner Area End =================-->
 {% block section1 %} {% endblock section1 %} {% block section2 %}
 <div class="card" style="margin: 2% 25% 2% 25%">
-    <div class="card-title text-center font-weight-bold">
-        Register Your school Account
+    <div class="card-title text-center font-weight-bold pb-0">
+        <h2>You have been Logged out</h2>
     </div>
     <div class="card-body">
-
-        <form action="" method="POST" class="">
-            {% csrf_token %}
-            <!--{{ form.non_field_errors }}-->
-
-            {{ form|crispy }}
-
-            <div class="form-group row text-center">
-                <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                </div>
-            </div>
-        </form>
     </div>
-    <div class="border-top pt-3 ml-2 ">
-        <small class="text-muted">
-            Already have an account? <a class="ml-2" href="{% url 'school_login' %}">Sign In</a>
+    <div class="border-top pt-0 text-center">
+        <small class="">
+            <a class="ml-2" href="{% url 'school_login' %}">Login again?</a>
         </small>
     </div>
 </div>

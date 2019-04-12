@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 <!doctype html>
 <html lang="en">
 
@@ -54,11 +55,24 @@
                     <!-- with button for mobile view -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'all_schools' %}">Schools</a>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'school_reg' %}">Join us</a>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'all_schools' %}">Contact us</a>
+                            <li
+                                class="nav-item {% url 'index' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                <a class="nav-link" href="{% url 'index' %}">Home</a></li>
+                            <li
+                                class="nav-item {% url 'about' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                <a class="nav-link" href="{% url 'about' %}">About</a></li>
+                            <li
+                                class="nav-item {% url 'all_schools' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                <a class="nav-link" href="{% url 'all_schools' %}">Schools</a></li>
+                            <li
+                                class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                <a class="nav-link" href="{% url 'school_reg' %}">Join us</a></li>
+                            <li
+                                class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == "ur" %} active {% endif %}">
+                                <a class="nav-link" href="#">Contact us</a></li>
+                            <li
+                                class="nav-item {% url 'login' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                <a class="nav-link" href="{% url 'login' %}">Login</a></li>
                         </ul>
                     </div>
                 </div>

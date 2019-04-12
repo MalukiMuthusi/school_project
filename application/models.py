@@ -19,7 +19,10 @@ class Student(models.Model):
         db_column="first_name",
     )
     last_name = models.CharField(
-        "Last name", max_length=200, help_text="Enter last name", db_column="last_name"
+        "Last name",
+        max_length=200,
+        help_text="Enter last name",
+        db_column="last_name"
     )
     admission_number = models.PositiveSmallIntegerField(
         "Admission number",
@@ -38,7 +41,10 @@ class Student(models.Model):
         help_text="Enter the student's current class",
         db_column="current_class",
     )
-    school = models.ForeignKey("School", on_delete=models.CASCADE, db_column="school")
+    school = models.ForeignKey(
+        "School",
+        on_delete=models.CASCADE,
+        db_column="school")
     home_town = models.CharField(
         "Home town",
         max_length=200,
@@ -78,10 +84,13 @@ class Parent(models.Model):
         db_column="first_name",
     )
     last_name = models.CharField(
-        "Last name", max_length=200, help_text="Enter last name", db_column="last_name"
+        "Last name", max_length=200,
+        help_text="Enter last name",
+        db_column="last_name"
     )
     email_address = models.EmailField(
-        max_length=254, help_text="Enter email address.", db_column="email_address"
+        max_length=254, help_text="Enter email address.",
+        db_column="email_address"
     )
     student = models.ManyToManyField(
         "Student", help_text="students names", db_column="student"
@@ -127,7 +136,9 @@ class School(models.Model):
         default="01/01/2000",
         db_column="year_established",
     )
-    SCHOOL_CATEGORY = (("PRI_SCH", "Primary School"), ("SEC_SCH", "Secondary School"))
+    SCHOOL_CATEGORY = (
+        ("PRI_SCH", "Primary School"), ("SEC_SCH", "Secondary School")
+        )
     school_category = models.CharField(
         "School level",
         help_text="Select school level",
@@ -136,7 +147,9 @@ class School(models.Model):
         max_length=20,
         db_column="school_category",
     )
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.OneToOneField(User,
+                                on_delete=models.CASCADE,
+                                null=True, blank=True)
 
     def get_absolute_url(self):
         return reverse("school", kwargs={"pk": self.pk})
@@ -146,5 +159,6 @@ class School(models.Model):
 
     class Meta:
         db_table = "schools"
-        ordering = ["school_category", "number_of_students", "number_of_teachers"]
-
+        ordering = [
+            "school_category", "number_of_students", "number_of_teachers"
+            ]
