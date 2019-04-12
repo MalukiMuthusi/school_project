@@ -1,9 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
-from django.contrib.auth.decorators import login_required
-from application.models import School
 
-# from django.contrib.auth.models import User
+from application.models import School
 
 # from django.core.paginator import Paginator
 # from django.contrib.auth.decorators import login_required
@@ -90,7 +88,7 @@ def register(request):
             form.save()
             username = form.cleaned_data.get("username")
             messages.success(request, f"Account created for {username}!")
-            return redirect("school_login", permanent=True)
+            return redirect("index", permanent=True)
     else:
         form = SchoolRegisterForm()
     return render(request, "school_reg.html", {"form": form})
@@ -106,16 +104,3 @@ def school_reg(request):
 class SchoolCreate(CreateView):
     model = School
     fields = "__all__"
-
-
-""" Login Redirect view """
-
-
-@login_required
-def login_redirect(request):
-    # pk = user.school.pk
-    # if it is a school admin accout
-    try:
-        return redirect(request.user.school, permanent=True)
-    except:
-        return redirect("index", permanent=True)

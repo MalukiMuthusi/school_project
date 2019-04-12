@@ -37,6 +37,8 @@
 {% endblock header %}
 <!--================Header Menu Area =================-->
 
+{% if messages %} {% for message in messages %}
+<p class="alert alert-info">{{ message }}</p>
 
 <!--================Hero Banner Area Start =================-->
 {% block hero-banner %}
