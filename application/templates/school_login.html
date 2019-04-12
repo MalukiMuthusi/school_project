@@ -18,10 +18,16 @@
 </section>
 {% endblock hero-banner %}
 <!--================Hero Banner Area End =================-->
-{% block section1 %} {% endblock section1 %} {% block section2 %}
+
+
+{% block section1 %}
+{% endblock section1 %}
+
+
+{% block section2 %}
 <div class="card" style="margin: 2% 25% 2% 25%">
     <div class="card-title text-center font-weight-bold">
-        Register Your school Account
+        Login to your School Admin Account
     </div>
     <div class="card-body">
 
@@ -38,13 +44,17 @@
             </div>
         </form>
     </div>
-    <div class="border-top pt-3 ml-2 ">
+    <div class="border-top pt-3">
         <small class="text-muted">
-            Already have an account? <a class="ml-2" href="{% url 'school_login' %}">Sign In</a>
+            Do you need an account? <a class="ml-2" href="{% url 'school_reg' %}">Sign Up</a>
         </small>
     </div>
 </div>
-{% endblock section2 %} {% block section3 %} {% endblock section3 %}
+{% endblock section2 %}
+
+
+{% block section3 %}
+{% endblock section3 %}
 
 
 <!--
