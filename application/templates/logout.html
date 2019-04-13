@@ -1,1 +1,42 @@
 {% extends 'base_generic.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!--================Hero Banner Area Start =================-->
+{% block hero-banner %}
+<section class="hero-banner hero-banner-sm">
+    <div class="container text-center">
+        <h2>{{ name }}</h2>
+        <nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <h2><a href="#">Registration</a></h2>
+                </li>
+                <!--li class="breadcrumb-item active" aria-current="page">Blog</li-->
+            </ol>
+        </nav>
+    </div>
+</section>
+{% endblock hero-banner %}
+<!--================Hero Banner Area End =================-->
+
+
+{% block section1 %} {% endblock section1 %}
+
+{% block section2 %}
+<div class="card" style="margin: 2% 25% 2% 25%">
+    <div class="card-title text-center font-weight-bold pb-0">
+        <h2>You have been Logged out</h2>
+    </div>
+    <div class="card-body">
+    </div>
+    <div class="border-top pt-0 text-center">
+        <small class="">
+            <a class="ml-2" href="{% url 'school_login' %}">Login again?</a>
+        </small>
+    </div>
+</div>
+{% endblock section2 %}
+
+
+{% block section3 %} {% endblock section3 %}

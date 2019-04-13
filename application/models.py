@@ -162,3 +162,7 @@ class School(models.Model):
         ordering = [
             "school_category", "number_of_students", "number_of_teachers"
             ]
+        permissions = (('can_edit_school', 'Can edit School'),)
+
+    def add_permission(self):
+        self.user.user_permissions.set(can_edit_school)

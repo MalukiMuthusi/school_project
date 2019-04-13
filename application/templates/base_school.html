@@ -1,5 +1,6 @@
 {% extends 'base_generic.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 
 <!--================ Header Menu Area start =================-->
@@ -22,12 +23,45 @@
                 <!-- with button for mobile view -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav justify-content-end">
-                        <li class="nav-item active"><a class="nav-link" href="{% url 'school' pk %}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Teaching Staffs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'about_school' %}">About</a>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'school_reg' %}">Results</a>
-                        <li class="nav-item"><a class="nav-link" href="#">Apply for admission</a>
+                        <li class="nav-item {% url 'school' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}">
+                            <a class="nav-link" href="{% url 'school' pk %}">Home</a>
+                        </li>
+                        <li class="nav-item {% url '#' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}"><a class="nav-link" href="#">Departments</a>
+                        </li>
+                        <li class="nav-item {% url '#' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}"><a class="nav-link" href="#">Teaching Staffs</a>
+                        </li>
+                        <li class="nav-item {% url '#' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}"><a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Results</a>
+                        </li>
+                        <li class="nav-item {% url '#' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}"><a class="nav-link" href="#">Apply for admission</a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+                        <li class="nav-item {% url 'request_data' pk as ur %} {% if request.get_full_path == ur %} active
+                            {% endif %}">
+                            <a class="nav-link" href="{% url 'request_data' pk %}">Fetch Student Info</a>
+                        </li>
+                        <li
+                            class="nav-item {% url 'logout' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li
+                            class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                            <a class="nav-link" href="{% url 'school_reg' %}">Join us</a>
+                        </li>
+                        <li
+                            class="nav-item {% url 'login' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                            <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        </li>
+                        {% endif %}
+
                     </ul>
                 </div>
             </div>
