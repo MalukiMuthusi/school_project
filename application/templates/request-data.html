@@ -1,0 +1,28 @@
+{% extends 'base_school.html' %}
+{% load crispy_forms_tags %}
+
+{% block section1 %}
+<div class="card" style="margin: 2% 25% 2% 25%">
+    <div class="card-title text-center font-weight-bold">
+        Fill Form to retrieve student Info
+    </div>
+    <div class="card-body">
+
+        <form action="" method="POST" class="">
+            {% csrf_token %}
+            <!--{{ form.non_field_errors }}-->
+
+            {{ form|crispy }}
+
+            <div class="form-group row text-center">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock section1 %}
+
+{% block section2 %} {% endblock section2 %}
+{% block section3 %} {% endblock section3 %}

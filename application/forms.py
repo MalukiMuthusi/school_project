@@ -32,3 +32,20 @@ class ParentForm(ModelForm):
     class Meta:
         model = Parent
         fields = "__all__"
+
+
+""" Form to request student's data """
+
+
+class request_dataForm(forms.Form):
+    Admn = forms.IntegerField(
+        label="Admission Number",
+        max_value=10000,
+        min_value=0,
+        help_text="Enter students admission number in the school to search",
+    )
+    school = forms.ModelChoiceField(
+        label="Former School",
+        help_text="Select Student's Former School",
+        queryset=School.objects.all(),
+    )

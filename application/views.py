@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
-from application.models import School
+from application.models import School, Student
 
 # from django.contrib.auth.models import User
 
@@ -11,10 +11,11 @@ from application.models import School
 # from .forms import SnippetForm, ContactForm, LoginForm
 # import datetime
 from django.views.generic.edit import CreateView
+from django.views.generic import ListView
 
 # DeleteView, UpdateView
 # from django.views import generic
-from .forms import SchoolRegisterForm
+from .forms import SchoolRegisterForm, request_dataForm
 from django.contrib import messages
 
 
@@ -55,6 +56,14 @@ def all_schools(request):
     # page = request.GET.get('page', 1)
     # paginator = Paginator(all_entries, 5)
     return render(request, "all_schools.html", context=context)
+
+
+""" Use Class list view """
+
+
+class SchoolListView(ListView):
+    model = School
+    template_name = "all_schools.html"
 
 
 def about_sch(request, pk):
@@ -119,3 +128,51 @@ def login_redirect(request):
         return redirect(request.user.school, permanent=True)
     except:
         return redirect("index", permanent=True)
+
+
+""" Request for student data """
+
+
+@login_required
+def request_data(request, pk):
+    if request.method == "POST":
+        form = request_dataForm(request.POST)
+        if form.is_valid():
+            admn = form.cleaned_data.get("Admn")
+            schn = form.cleaned_data.get("school")
+            sch = schn.pk
+            return redirect("view_data", admn, sch, permanent=True)
+    else:
+        form = request_dataForm()
+    name = School.objects.get(pk=pk)
+    context = {"form": form, "pk": pk, "name": name}
+    return render(request, "request-data.html", context=context)
+
+
+""" View data """
+
+
+@login_required
+def view_data(request, admn, sch):
+    # sch_name = School.objects.get(pk=sch)
+    # student = sch_name.objects.filter(Student=admn)
+
+    try:
+        student = Student.objects.get(
+            admission_number=admn, school=School.objects.get(pk=sch)
+        )
+        context = {
+            "first_name": student.first_name,
+            "last_name": student.last_name,
+            "DOB": student.Date_of_Birth,
+            "class": student.current_class,
+            "pk": sch,
+            "name": School.objects.get(pk=sch),
+            "student": student
+        }
+        return render(request, "view_data.html", context=context)
+    except:
+        user = request.user
+        school = School.objects.get(user=user)
+        context = {"pk": school.pk, "name": school}
+        return render(request, "error_403.html", context)

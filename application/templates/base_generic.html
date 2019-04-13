@@ -4,388 +4,408 @@
 <html lang="en">
 
 
-<!-- head section -->
+    <!-- head section -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Title of the page-->
-    {% block title %}
-    <title>Online School Transfer System</title>
-    {% endblock title %}
+        <!-- Title of the page-->
+        {% block title %}
+        <title>Online School Transfer System</title>
+        {% endblock title %}
 
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/style_main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-</head>
-<!-- end of head section -->
+        <link rel="stylesheet" href="{% static 'css/style_main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <!-- end of head section -->
 
-<body>
+    <body>
 
 
-    <!--================ Header Menu Area start =================-->
-    {% block header %}
-    <header class="header_area">
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container box_1620">
-                    <!-- Brand Logo -->
-                    <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39"
-                            src="{% static 'images/book.png' %}" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+        <!--================ Header Menu Area start =================-->
+        {% block header %}
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container box_1620">
+                        <!-- Brand Logo -->
+                        <a class="navbar-brand logo_h" href="index.html"><img width="39" height="39"
+                                src="{% static 'images/book.png' %}" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                    <!-- with button for mobile view -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li
-                                class="nav-item {% url 'index' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
-                                <a class="nav-link" href="{% url 'index' %}">Home</a></li>
-                            <li
-                                class="nav-item {% url 'about' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
-                                <a class="nav-link" href="{% url 'about' %}">About</a></li>
-                            <li
-                                class="nav-item {% url 'all_schools' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
-                                <a class="nav-link" href="{% url 'all_schools' %}">Schools</a></li>
-                            <li
-                                class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
-                                <a class="nav-link" href="{% url 'school_reg' %}">Join us</a></li>
-                            <li
-                                class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == "ur" %} active {% endif %}">
-                                <a class="nav-link" href="#">Contact us</a></li>
-                            <li
-                                class="nav-item {% url 'login' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
-                                <a class="nav-link" href="{% url 'login' %}">Login</a></li>
-                        </ul>
+                        <!-- with button for mobile view -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav justify-content-end">
+                                <li
+                                    class="nav-item {% url 'index' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li
+                                    class="nav-item {% url 'about' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                                </li>
+                                <li
+                                    class="nav-item {% url 'all_schools' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'all_schools' %}">Schools</a>
+                                </li>
+                                <li
+                                    class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == "ur" %} active {% endif %}">
+                                    <a class="nav-link" href="#">Contact us</a>
+                                </li>
+
+                                {% if user.is_authenticated %}
+                                <li
+                                    class="nav-item {% url 'logout' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                                </li>
+                                {% else %}
+                                <li
+                                    class="nav-item {% url 'school_reg' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'school_reg' %}">Join us</a>
+                                </li>
+                                <li
+                                    class="nav-item {% url 'login' as ur %} {% if request.get_full_path == ur %} active {% endif %}">
+                                    <a class="nav-link" href="{% url 'login' %}">Login</a>
+                                </li>
+                                {% endif %}
+
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    {% endblock header %}
-    <!--================Header Menu Area =================-->
-
-
-    {% if messages %} {% for message in messages %}
-    <p class="alert alert-info">{{ message }}</p>
-    {% endfor %} {% endif %}
-
-    <!--================Hero Banner Area Start =================-->
-    {% block hero-banner %}
-
-    <section class="hero-banner">
-        <div class="container text-center">
-            <!--span class="hero-banner-icon"><i class="flaticon-sing"></i></span-->
-            <h1>Online School Appliaction And Admission System <img src="{% static 'images/head.png' %}" alt=""></h1>
-            <p>Helping you to transfer to your dream school</p>
-            <a class="button button-header mt-4" href="{% url 'school_reg' %}">Join US</a>
-            <p class="mt-2"><img src="{% static 'images/pen_black.png' %}" alt=""></p>
-        </div>
-    </section>
-    {% endblock hero-banner %}
-    <!--================Hero Banner Area End =================-->
-
-
-    <!--================ Our services Section =================-->
-    {% block section1 %}
-    <section class="section-padding--small bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
-                    <div class="innovative-wrapper">
-                        <h3 class="primary-text">Transfer to your dream school with style. <br
-                                class="d-none d-xl-block">Students
-                        </h3>
-                        <p class="h4 primary-text2 mb-3"></p>
-                        <p>We are passionate about making you to easily transition to another school. Whether in primary
-                            school or secondary school. Also from primary school to secondary. All that you need is
-                            visit the school of your choice online and apply.
-                            You don't have to go any where or send any documents, we take of that.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 pl-xl-5">
-                    <div class="innovative-wrapper">
-                        <h3 class="primary-text">Manage Admissions. <br class="d-none d-xl-block">Primary And Secondary
-                            Schools
-                        </h3>
-                        <p class="h4 primary-text2 mb-3"></p>
-                        <p>Using our system you can easily manage the whole process of admitting students. From
-                            publishing the is vancancy in your school web page to inviting qualified candidates for
-                            interview. The checking their background data from their
-                            previous school, still through the system.</p>
-                    </div>
-                </div>
+                </nav>
             </div>
-        </div>
-    </section>
-    {% endblock section1 %}
-    <!--================  End ofOur services section =================-->
+        </header>
+        {% endblock header %}
+        <!--================Header Menu Area =================-->
 
 
-    <!--================ Join section Start =================-->
-    {% block section2 %}
-    <section class="section-padding--small bg-gray text-center section-margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 align-self-center mb-5 mb-lg-0">
-                    <div class="innovative-wrapper">
-                        <h3 class="primary-text">Why Join Us. <br class="d-none d-xl-block"></h3>
-                        <p class="h4 primary-text2 mb-3"></p>
-                        <p>We guarantee to offer high quality service for both schools and students or parents.</p>
-                        <p>When a school joins our services, We provide an online platform to them to manage the process
-                            of admitting students. The school gets a blogging section where they can post for new
-                            vancancies or any school news of their interest.
-                            The school can advatise itself. They can post major exam results, events.</p>
-                        <br>
-                        <p>A student or any interesetd party can visit our website and view list of available schools in
-                            our system. They can then visit the school website and proceed from there. They can make
-                            inquiries to the school if they want, for clarification
-                            on anything.</p>
-                    </div>
-                </div>
+        {% if messages %} {% for message in messages %}
+        <p class="alert alert-info">{{ message }}</p>
+        {% endfor %} {% endif %}
+
+        <!--================Hero Banner Area Start =================-->
+        {% block hero-banner %}
+
+        <section class="hero-banner">
+            <div class="container text-center">
+                <!--span class="hero-banner-icon"><i class="flaticon-sing"></i></span-->
+                <h1>Online School Appliaction And Admission System <img src="{% static 'images/head.png' %}" alt="">
+                </h1>
+                <p>Helping you to transfer to your dream school</p>
+                <a class="button button-header mt-4" href="{% url 'school_reg' %}">Join US</a>
+                <p class="mt-2"><img src="{% static 'images/pen_black.png' %}" alt=""></p>
             </div>
-        </div>
-    </section>
-    {% endblock section2 %}
-    <!--================ Join section End =================-->
+        </section>
+        {% endblock hero-banner %}
+        <!--================Hero Banner Area End =================-->
 
 
-    <!--================ Our team section =================-->
-    {% block section3 %}
-    <section class="speaker-bg section-padding">
-        <div class="container">
-            <div class="section-intro section-intro-white text-center pb-98px">
-                <h2 class="primary-text">Our Team</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-2.jpeg' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Maluki Muthusi</h4>
-                            <p>Project Manager</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-3.JPG' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Catherine Wambai</h4>
-                            <p>Retired Pricipal<br>Makadara Secondary</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-4.png' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Ali Mazrui</h4>
-                            <p>High School Teacher<br>Umoja Primary</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-100 mb-50px d-none d-lg-block"></div>
-
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-5.jpeg' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Samson Wahina</h4>
-                            <p>Head Teacher<br>Light Academy</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-1.png' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Sharon Wambui</h4>
-                            <p>Curriculum Developer<br>Ministry of Education</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="card-speaker">
-                        <img class="card-img rounded-0" src="{% static 'images/speaker-1.png' %}" alt="">
-                        <div class="speaker-footer">
-                            <h4>Vincent Maseki</h4>
-                            <p>Senior Software Developer<br>New Tech Solved</p>
-                        </div>
-                        <div class="speaker-overlay">
-                            <ul class="speaker-social">
-                                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                                <li><a href="#"><i class="ti-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endblock section3 %}
-    <!--================ Our Team Section =================-->
-
-
-    <!-- ================ start footer Area ================= -->
-    {% block footer %}
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4  col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>About US</h6>
-                        <p>
-                            The modern world requires faster methods of achieving doing something. That is what we
-                            provide to both schools, students and parents using our services.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>Navigation Links</h6>
-                        <div class="row">
-                            <div class="col">
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Feature</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li><a href="#">Schools</a></li>
-                                    <li><a href="#">Parent/Students</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4  col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h6>Newsletter</h6>
-                        <p>
-                            For easy management of the school transfer process
-                        </p>
-                        <div id="mc_embed_signup">
-                            <form target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="subscription relative">
-                                <div class="input-group d-flex flex-row">
-                                    <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                    <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
-                                </div>
-                                <div class="mt-10 info"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
+        <!--================ Our services Section =================-->
+        {% block section1 %}
+        <section class="section-padding--small bg-gray">
             <div class="container">
-                <div class="row align-items-center">
-                    <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | This website is made with <i class="fa fa-heart"
-                            aria-hidden="true"></i> by
-                        <a href="#" target="_blank">Maluki Muthusi</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                    <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                        <a href="#"><i class="fab fa-behance"></i></a>
+                <div class="row">
+                    <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+                        <div class="innovative-wrapper">
+                            <h3 class="primary-text">Transfer to your dream school with style. <br
+                                    class="d-none d-xl-block">Students
+                            </h3>
+                            <p class="h4 primary-text2 mb-3"></p>
+                            <p>We are passionate about making you to easily transition to another school. Whether in
+                                primary
+                                school or secondary school. Also from primary school to secondary. All that you need is
+                                visit the school of your choice online and apply.
+                                You don't have to go any where or send any documents, we take of that.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-xl-5">
+                        <div class="innovative-wrapper">
+                            <h3 class="primary-text">Manage Admissions. <br class="d-none d-xl-block">Primary And
+                                Secondary
+                                Schools
+                            </h3>
+                            <p class="h4 primary-text2 mb-3"></p>
+                            <p>Using our system you can easily manage the whole process of admitting students. From
+                                publishing the is vancancy in your school web page to inviting qualified candidates for
+                                interview. The checking their background data from their
+                                previous school, still through the system.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    {% endblock footer %}
-    <!-- ================ End footer Area ================= -->
+        </section>
+        {% endblock section1 %}
+        <!--================  End ofOur services section =================-->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-    <script src="{% static 'js/mail-script.js' %}"></script>
-    <script src="{% static 'js/countdown.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+        <!--================ Join section Start =================-->
+        {% block section2 %}
+        <section class="section-padding--small bg-gray text-center section-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 align-self-center mb-5 mb-lg-0">
+                        <div class="innovative-wrapper">
+                            <h3 class="primary-text">Why Join Us. <br class="d-none d-xl-block"></h3>
+                            <p class="h4 primary-text2 mb-3"></p>
+                            <p>We guarantee to offer high quality service for both schools and students or parents.</p>
+                            <p>When a school joins our services, We provide an online platform to them to manage the
+                                process
+                                of admitting students. The school gets a blogging section where they can post for new
+                                vancancies or any school news of their interest.
+                                The school can advatise itself. They can post major exam results, events.</p>
+                            <br>
+                            <p>A student or any interesetd party can visit our website and view list of available
+                                schools in
+                                our system. They can then visit the school website and proceed from there. They can make
+                                inquiries to the school if they want, for clarification
+                                on anything.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock section2 %}
+        <!--================ Join section End =================-->
 
-</body>
+
+        <!--================ Our team section =================-->
+        {% block section3 %}
+        <section class="speaker-bg section-padding">
+            <div class="container">
+                <div class="section-intro section-intro-white text-center pb-98px">
+                    <h2 class="primary-text">Our Team</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-2.jpeg' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Maluki Muthusi</h4>
+                                <p>Project Manager</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-3.JPG' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Catherine Wambai</h4>
+                                <p>Retired Pricipal<br>Makadara Secondary</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-4.png' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Ali Mazrui</h4>
+                                <p>High School Teacher<br>Umoja Primary</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100 mb-50px d-none d-lg-block"></div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-5.jpeg' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Samson Wahina</h4>
+                                <p>Head Teacher<br>Light Academy</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-1.png' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Sharon Wambui</h4>
+                                <p>Curriculum Developer<br>Ministry of Education</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="card-speaker">
+                            <img class="card-img rounded-0" src="{% static 'images/speaker-1.png' %}" alt="">
+                            <div class="speaker-footer">
+                                <h4>Vincent Maseki</h4>
+                                <p>Senior Software Developer<br>New Tech Solved</p>
+                            </div>
+                            <div class="speaker-overlay">
+                                <ul class="speaker-social">
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endblock section3 %}
+        <!--================ Our Team Section =================-->
+
+
+        <!-- ================ start footer Area ================= -->
+        {% block footer %}
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About US</h6>
+                            <p>
+                                The modern world requires faster methods of achieving doing something. That is what we
+                                provide to both schools, students and parents using our services.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Navigation Links</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Feature</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Our Team</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><a href="#">Schools</a></li>
+                                        <li><a href="#">Parent/Students</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Newsletter</h6>
+                            <p>
+                                For easy management of the school transfer process
+                            </p>
+                            <div id="mc_embed_signup">
+                                <form target="_blank"
+                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    method="get" class="subscription relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
+                                    </div>
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This website is made with <i class="fa fa-heart"
+                                aria-hidden="true"></i> by
+                            <a href="#" target="_blank">Maluki Muthusi</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                        <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        {% endblock footer %}
+        <!-- ================ End footer Area ================= -->
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static 'js/countdown.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+    </body>
 
 </html>
